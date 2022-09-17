@@ -32,6 +32,38 @@ markFavorite: async (req, res)=>{
         console.log(err)
     }
 },
+markComplete: async (req, res)=>{
+    try{
+        await Exercise.findByIdAndUpdate({_id:req.body.todoIdFromJSFile},
+            {
+            isComplete: true, 
+        })
+        res.render('index', {isComplete : true})
+        res.sendFile()
+        
+        
+        console.log('Marked as Completed')
+        res.json('Marked as Completed')
+    }catch(err){
+        console.log(err)
+    }
+},
+markIncomplete: async (req, res)=>{
+    try{
+        await Exercise.findByIdAndUpdate({_id:req.body.todoIdFromJSFile},
+            {
+            isComplete: true, 
+        })
+        res.render('index', {isComplete : false})
+        res.sendFile()
+        
+        
+        console.log('Marked as Incomplete')
+        res.json('Marked as Incomplete')
+    }catch(err){
+        console.log(err)
+    }
+},
 
 
 }

@@ -165,6 +165,20 @@ html{
     border-radius: 1rem;
     border: none;
   }
+
+  .completed-button:hover{
+    font-size: 2rem;
+    background-color: #baf9ac;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+  
+  }
+
+  .done{
+    color:rgb(84, 84, 84);
+    text-decoration: line-through;
+
+  }
   
   #title{
     font-size: 4rem;

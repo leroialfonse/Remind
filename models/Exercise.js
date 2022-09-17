@@ -18,6 +18,10 @@ const ExerciseSchema = new mongoose.Schema({
         
         required: true,
      },
+     isComplete: {
+      type: Boolean,
+      required: true
+     },
    },{
       timestamps:true 
 })
