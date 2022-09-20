@@ -49,7 +49,7 @@ async function markFavorite(){
 
 async function markComplete(){
     console.log('completed pressed')
-    const todoId = this.dataset.id
+    const exerciseTitle = this.exercise-description
     console.log(todoId)
     try{
         const response = await fetch('/markComplete', {
@@ -63,7 +63,6 @@ async function markComplete(){
         console.log(data)
         location.reload()
     }catch(err){
-        console.log(err)
     }
 }
 

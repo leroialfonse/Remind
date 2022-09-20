@@ -39,7 +39,7 @@ markComplete: async (req, res)=>{
             isComplete: true, 
         })
         res.render('index', {isComplete : true})
-        res.sendFile()
+        res.sendFile('/' + req.params.id)
         
         
         console.log('Marked as Completed')
