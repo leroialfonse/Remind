@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-   <meta charset="utf-8">
-   <meta name="description" content="This is where your description goes">
-   <meta name="keywords" content="one, two, three">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;600;800&display=swap" rel="stylesheet">	
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <title>Re:mind Homepage</title>
-
-		<!-- external CSS link -->
+<%- include("partials/layout/landingHeader") %>
+	
+<div class="hero min-h-screen bg-base-200">
+	<div class="hero-content lg:flex-row">
+	  <img src="/img/thumbnail.jpg" class="max-w-md rounded-lg shadow-2xl " />
+	  <div>
 		
+<<<<<<< HEAD
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -79,3 +72,24 @@
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
+=======
+		<h1 class="text-5xl font-bold leading-loose text-coral-dark flex items-center space-x-8"> 
+			<!-- <img class="background-slate-700 mr-2" src="/img/remind-logo.svg" alt="The logo for our awesome app"> -->
+			Re:Mind</h1>
+		<p class="py-6 leading-loose text-slate-600">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+
+		<div class="mt-8 flex gap-x-2 sm:justify-center">
+			<button class="font-semibold">
+				<a class="py-4 px-6 ml-4 text-md text-white rounded-md bg-coral hover:bg-coral-dark shadow" href="/auth/login" role="button">Login</a>
+			</button>
+			<button class="font-semibold">
+				<a class="py-4 px-4 ml-4 text-md text-white rounded-md bg-coral hover:bg-coral-dark shadow" href="/auth/signup" role="button">Sign Up</a>
+			</button>
+		  </div>
+	  </div>
+	</div>
+  </div>
+
+
+<%- include("partials/layout/footer") %>
+>>>>>>> 1a1b333ee5ffdddb559276b9246099ec974378d0
